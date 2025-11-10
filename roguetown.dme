@@ -2855,6 +2855,8 @@
 #include "modular_causticcove\code\modules\bottomless\bottomless.dm"
 #include "modular_causticcove\code\modules\bottomless\maxfood.dm"
 #include "modular_causticcove\code\modules\bottomless\stressevent_gluton.dm"
+#include "modular_causticcove\code\modules\cargo\packsrogue\merchant\weapons\merch_weapons_foreign.dm"
+#include "modular_causticcove\code\modules\cargo\packsrogue\merchant\weapons\merch_weapons_ranged.dm"
 #include "modular_causticcove\code\modules\chompy_vore\atom.dm"
 #include "modular_causticcove\code\modules\chompy_vore\atoms_movable.dm"
 #include "modular_causticcove\code\modules\chompy_vore\bellies_vr.dm"
