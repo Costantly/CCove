@@ -72,75 +72,75 @@
 		switch(spell_choice_1)
 			//Allows them to tank damage until they die, up to 50 damage before needing to re-cast.
 			if("Stillness of Stone")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/stillness_of_stone)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/stillness_of_stone)
 			//Teleportation! Can bring items around with hands from one place to another with ease.
 			if("Veiled Shift")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/lurking_step)
-				mind.AddSpell(/obj/effect/proc_holder/spell/invoked/veilbound_shift)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/lurking_step)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/veilbound_shift)
 			//Can hold books, spells, papers, notes, etc. Anything that is typepath of Book/Paper.
 			if("Inscriptor's Cache")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/inscription_cache)
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/recall_cache)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/inscription_cache)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/recall_cache)
 			//Healing AOE, toggle, very weak, only heals 2 damage every 10 seconds.
 			if("Soothing Vapors")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/soothing_bloom)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/soothing_bloom)
 			//LOS Blocker, 5 Minute Cooldown as of this comment. Can possibly help in PvE to escape death? 2 tile radius.
 			if("Smoldering Shroud")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/smolder_shroud)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/smolder_shroud)
 			//Free Blink! How neat! Allows you to teleport around instantly every 10 seconds.
 			if("Glimmering Jaunt")
-				mind.AddSpell(/obj/effect/proc_holder/spell/invoked/blink/glimmer_hare)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/blink/glimmer_hare)
 			//Applies temporary invisibility on everyone around the familiar for 5 seconds.
 			if("Verdant Veil")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/verdant_veil)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/verdant_veil)
 			//Amazing body locating spell, can track corpses and lead others to them.
 			if("Grave Scent")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/scent_of_the_grave)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/scent_of_the_grave)
 			//Reveals anyone invisible/stealthing nearby in a large AOE and makes a comment in chat.
 			if("Starseers Cry")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/starseers_cry)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/starseers_cry)
 			//Portable flint and steel... useless since Prestidigation exists to be quite honest; Spammable however and great for clearing bushes and trees?
 			if("Pyroclastic Puff")
-				mind.AddSpell(/obj/effect/proc_holder/spell/invoked/pyroclastic_puff)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/pyroclastic_puff)
 			//Quite literally doesn't even work... But it's meant to spawn a copy illusion that runs another way. It really has no use and should be replaced with something else.
 			/*if("(PLACEHOLDER YOU SHOULDNT SEE THIS) Phantom Flicker")
 				mind.AddSpell(/obj/effect/proc_holder/spell/self/phantom_flicker) */\
 			//Allows the familiar to go invisible for 15 seconds. Great to throw people off track if you're stealing something, mostly PvP related.
 			if("Phantasm Fade")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/phantasm_fade)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/phantasm_fade)
 			//Grows ... Grass! And Bushes! For free! ... Kind of useless and not worth it to farm shit, but cool flavor spell?
 			if("Verdant Sprout")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/verdant_sprout)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/verdant_sprout)
 		//Second spell choice. 
 		var/spells_2 = spells - spell_choice_1 //Remove our first choice from the list.
 		var/spell_choice_2 = input(src, "Choose your second spell.", "PREPARE YOUR MAGIC.") as anything in spells_2
 		switch(spell_choice_2)
 			if("Stillness of Stone")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/stillness_of_stone)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/stillness_of_stone)
 			if("Veiled Shift")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/lurking_step)
-				mind.AddSpell(/obj/effect/proc_holder/spell/invoked/veilbound_shift)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/lurking_step)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/veilbound_shift)
 			if("Inscriptor's Cache")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/inscription_cache)
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/recall_cache)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/inscription_cache)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/recall_cache)
 			if("Soothing Vapors")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/soothing_bloom)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/soothing_bloom)
 			if("Smoldering Shroud")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/smolder_shroud)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/smolder_shroud)
 			if("Glimmering Jaunt")
-				mind.AddSpell(/obj/effect/proc_holder/spell/invoked/blink/glimmer_hare)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/blink/glimmer_hare)
 			if("Verdant Veil")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/verdant_veil)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/verdant_veil)
 			if("Grave Scent")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/scent_of_the_grave)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/scent_of_the_grave)
 			if("Starseers Cry")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/starseers_cry)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/starseers_cry)
 			if("Pyroclastic Puff")
-				mind.AddSpell(/obj/effect/proc_holder/spell/invoked/pyroclastic_puff)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/pyroclastic_puff)
 			if("Phantasm Fade")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/phantasm_fade)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/phantasm_fade)
 			if("Verdant Sprout")
-				mind.AddSpell(/obj/effect/proc_holder/spell/self/verdant_sprout)
+				mind.AddSpell(new /obj/effect/proc_holder/spell/self/verdant_sprout)
 			
 		//All familiars get this spell.
 		mind.AddSpell(/obj/effect/proc_holder/spell/invoked/projectile/arcynebolt/familiar)
