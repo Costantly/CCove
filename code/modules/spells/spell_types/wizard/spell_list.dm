@@ -62,7 +62,7 @@ GLOBAL_LIST_INIT(learnable_spells, (list(/obj/effect/proc_holder/spell/invoked/p
 		/obj/effect/proc_holder/spell/invoked/raise_deadite,
 		/obj/effect/proc_holder/spell/invoked/bonechill,
 		/obj/effect/proc_holder/spell/invoked/silence,
-		/obj/effect/proc_holder/spell/self/findfamiliar, // Caustic Edit
+		/obj/effect/proc_holder/spell/self/findfamiliar,
 		/obj/effect/proc_holder/spell/invoked/conjure_tool/mage, // Caustic Edit
 		)
 ))
