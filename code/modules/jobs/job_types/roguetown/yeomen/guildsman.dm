@@ -133,7 +133,8 @@
 		/datum/skill/craft/traps = SKILL_LEVEL_EXPERT, //setting to higher level to counter an antag trap maker
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/ceramics = SKILL_LEVEL_JOURNEYMAN,	//Just for basic pottery/glass stuff.
-		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE //Caustic edit
+		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,//CAUSTIC EDIT
+		/datum/skill/combat/firearms = SKILL_LEVEL_APPRENTICE //Caustic edit end, same as crossbows
 	)
 
 /datum/outfit/job/roguetown/guildsman/artificer/pre_equip(mob/living/carbon/human/H)
@@ -146,7 +147,8 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	belt = /obj/item/storage/belt/rogue/leather
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
+	beltr = /obj/item/storage/magebag/starter //cc edit start
+	neck = /obj/item/storage/belt/rogue/pouch/coins/mid //cc edit end
 	beltl = /obj/item/roguekey/crafterguild
 	backl = /obj/item/storage/backpack/rogue/backpack
 	backpack_contents = list(
