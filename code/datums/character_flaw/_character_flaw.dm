@@ -751,14 +751,18 @@ GLOBAL_LIST_INIT(averse_factions, list(
 	var/time_since = world.time - active_since
 	var/refund = 0
 	switch(time_since)
+		//Caustic Edit - Changing this to reflect the 4-cost no vice instead of 3
 		if(1 to 30 MINUTES)
-			refund = 3
+			refund = 4
 		if(31 MINUTES to 60 MINUTES)
-			refund = 2
+			refund = 3
 		if(61 MINUTES to 90 MINUTES)
+			refund = 2
+		if(91 to 120 MINUTES)
 			refund = 1
-		if(91 to 9999 MINUTES)
+		if(121 to 9999 MINUTES)
 			refund = 0
+		//Caustic Edit End
 	if(refund)
 		to_chat(user, span_info("Refunding Triumphs due to vice."))
 		user.adjust_triumphs(refund)
@@ -783,11 +787,13 @@ GLOBAL_LIST_INIT(averse_factions, list(
 						averse_found = TRUE
 						break
 		if(!averse_found)
-			var/list/options = list("Pick a Random Aversion", "Keep Current (-3 TRI)")
+			//Caustic Edit - Changing the cost to reflect the no-vice cost of 4 instead of 3
+			var/list/options = list("Pick a Random Aversion", "Keep Current (-4 TRI)")
 			var/choice = input(user, "There are no viable candidates for your Aversion. What do you do?", "AVERSION ALERT") as anything in options
-			if(choice == "Keep Current (-3 TRI)" || !choice)
-				user.adjust_triumphs(-3)
+			if(choice == "Keep Current (-4 TRI)" || !choice)
+				user.adjust_triumphs(-4)
 				paid_triumphs = TRUE
+			//Caustic Edit End
 			else if(choice == "Pick a Random Aversion")
 				var/new_aversion
 				var/max_attempts = 10
