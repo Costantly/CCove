@@ -295,7 +295,7 @@
 	keys = list(/obj/item/roguekey/merchant, /obj/item/roguekey/shop)
 
 /obj/item/storage/keyring/innkeep //All access to the tavern + baths
-	keys = list(/obj/item/roguekey/tavern, /obj/item/roguekey/tavernkeep, /obj/item/roguekey/bathmaster, /obj/item/roguekey/mercenary, /obj/item/roguekey/bathworker)
+	keys = list(/obj/item/roguekey/tavern, /obj/item/roguekey/tavernkeep, /obj/item/roguekey/mercenary) //Caustic Edit - Removing Bathmaster and Bathworker keys from Innkeeper
 
 /obj/item/storage/keyring/innkeep_rooms
 	keys = list(/obj/item/roguekey/roomhunt, /obj/item/roguekey/roomvi, /obj/item/roguekey/roomv, /obj/item/roguekey/roomiv, /obj/item/roguekey/roomiii, /obj/item/roguekey/roomii, /obj/item/roguekey/roomi, /obj/item/roguekey/fancyroomi, /obj/item/roguekey/fancyroomii, /obj/item/roguekey/fancyroomiii, /obj/item/roguekey/fancyroomiv, /obj/item/roguekey/fancyroomv)
