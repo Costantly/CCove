@@ -5,7 +5,7 @@
 	var/list/item_loadout = list()
 	var/list/item_grants = list()
 	var/list/item_paint = list()
-	var/base_points = 20
+	var/base_points = 120
 	var/list/equip_slots_cache = list()
 
 /datum/tat_items/New(datum/tat_build/B)

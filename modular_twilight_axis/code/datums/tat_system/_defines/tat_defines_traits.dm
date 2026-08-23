@@ -27,7 +27,7 @@
 #define TAT_TRAIT_HERETIC "tat_heretic"
 #define TAT_TRAIT_LOOTRAT "tat_lootrat"
 #define TAT_TRAIT_LOOTRAT_2 "tat_lootrat_2"
-//#define TAT_TRAIT_FREEPTS "tat_freepts"
+#define TAT_TRAIT_FREEPTS "tat_freepts"
 
 #define TAT_TRAIT_DIVINE_INITIATE "tat_divine_initiate"
 #define TAT_TRAIT_MAGE_INITIATE "tat_mage_initiate"
@@ -212,7 +212,6 @@ GLOBAL_LIST_INIT(tat_trait_skill_cap_bonus_rules, TAT_TRAIT_SKILL_CAP_BONUS_RULE
 )
 
 // TAT_TRAIT_CONTRACTOR = TAT_TRAIT_ENTRY("Contractor", 80, TAT_CATEGORY_CLASS_MODULE, TAT_CATEGORY_CLASS_MODULE_NAME, "Awakens the contract-bearing curse in your veins. The whole world is waiting your gifts and deals."),
-//TAT_TRAIT_FREEPTS = TAT_TRAIT_ENTRY("Free points", -200, TAT_CATEGORY_COMBAT_MASTERY, TAT_CATEGORY_ENHANCEMENT_NAME, "You are an admin, congrats! Have some free points. Hope you will use it wisely."),
 //TRAIT_MANORHOLDERSMALL = TAT_TRAIT_ENTRY("Petty Estate Holder", 10, TAT_CATEGORY_ENHANCEMENT, TAT_CATEGORY_ENHANCEMENT_NAME, "My holdings are barely worth mentioning within the duchy."),
 //TRAIT_MANORHOLDERMEDIUM = TAT_TRAIT_ENTRY("Minor Estate Holder", 20, TAT_CATEGORY_ENHANCEMENT, TAT_CATEGORY_ENHANCEMENT_NAME, "I hold a somewhat important land within the duchy."),
 #define TAT_AVAILABLE_TRAITS_LIST \
@@ -362,6 +361,7 @@ GLOBAL_LIST_INIT(tat_trait_skill_cap_bonus_rules, TAT_TRAIT_SKILL_CAP_BONUS_RULE
 	TRAIT_DUSTABLE = TAT_TRAIT_ENTRY("Dusting", -15, TAT_CATEGORY_ODDITY, TAT_CATEGORY_ODDITY_NAME, "Your body's grasp on this realm is weak. Should you die, your form will dissolve into inert dust."), \
 	TRAIT_NOFALLDAMAGE1 = TAT_TRAIT_ENTRY("Fall Damage Reduction", 20, TAT_CATEGORY_ENHANCEMENT, TAT_CATEGORY_ENHANCEMENT_NAME, "You can handle short falls without harm."), \
 	TAT_TRAIT_DEBUG = TAT_TRAIT_ENTRY("Debug Test Trait", -2000, TAT_CATEGORY_SKILL_CONVERSION, TAT_CATEGORY_SKILL_CONVERSION_NAME, "Debug Test Trait."), \
+	TAT_TRAIT_FREEPTS = TAT_TRAIT_ENTRY("Free points", -500, TAT_CATEGORY_COMBAT_MASTERY, TAT_CATEGORY_ENHANCEMENT_NAME, "You are an admin, congrats! Have some free points. Hope you will use it wisely."), \
 
 
 #define TAT_TRAIT_STAT_POINT_RULES list( \

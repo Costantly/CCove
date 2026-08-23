@@ -265,7 +265,7 @@ GLOBAL_LIST_INIT(tat_donation_access_all_ckeys, TAT_DONATION_ACCESS_ALL_CKEYS)
 	/obj/item/clothing/shoes/roguetown/boots/otavan = TAT_ITEM_ENTRY("Otavan Leather Boots", 1.5, "clothing", "armor_family", TAT_ARMOR_LEATHER, "shoes"), \
 	/obj/item/clothing/shoes/roguetown/boots/psydonboots = TAT_ITEM_ENTRY("Psydonic Boots", 1.5, "clothing", "armor_family", TAT_ARMOR_LEATHER, "shoes"), \
 	/obj/item/clothing/shoes/roguetown/grenzelhoft = TAT_ITEM_ENTRY("Grenzelhoft Boots", 1.5, "clothing", "armor_family", TAT_ARMOR_LEATHER, "shoes"), \
-	/obj/item/clothing/shoes/roguetown/shortboots = TAT_ITEM_ENTRY("Short Boots", 0, "clothing", "armor_family", TAT_ARMOR_CLOTH, "shoes"), \
+	/obj/item/clothing/shoes/roguetown/shortboots = TAT_ITEM_ENTRY("Short Boots", -50, "clothing", "armor_family", TAT_ARMOR_CLOTH, "shoes"), \
 	/obj/item/clothing/suit/roguetown/armor/chainmail = TAT_ITEM_ENTRY("Steel Haubergeon", 2.5, "clothing", "armor_family", TAT_ARMOR_MAIL, "suit"), \
 	/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/ornate = TAT_ITEM_ENTRY("Psydonic Hauberk", 3.5, "clothing", "armor_family", TAT_ARMOR_PLATE, "armor"), \
 	/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/heavy = TAT_ITEM_ENTRY("Mailled Hauberk", 3.5, "clothing", "armor_family", TAT_ARMOR_PLATE, "armor"), \
